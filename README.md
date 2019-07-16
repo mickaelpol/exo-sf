@@ -14,9 +14,9 @@ Il n'y a pas de limitation sur les libraires utilisées.
 
 Afin de simplifier le développement les composants suivants sont déjà présents :
 
-- Le template : situé dans `src/AppBundle/Ressources/views/Weather/display.html.twig` doit afficher les données de la météo
-- Le controlleur : situé dans `src/AppBundle/Controller/WeatherController` doit récupérer les données et les passer au template
-- Le service : situé dans `src/AppBundle/Service/WeatherService` doit soccuper de réaliser l'appel à l'api
+- Le template : situé dans `templates/weather/index.html.twig` doit afficher les données de la météo
+- Le controlleur : situé dans `src/Controller/WeatherController.php` doit récupérer les données et les passer au template
+- Le service : situé dans `src/Service/WeatherService.php` doit soccuper de réaliser l'appel à l'api
 
 L'ensemble du projet a été initialisé afin de vous faire gagner du temps.
 
@@ -27,6 +27,30 @@ L'api utilisé pour récupérer la météo est `Dark Sky API`
 La fonction `dump` de symfony permet d'affciher des données lorsqu'on est en mode debug.
 
 ### Installation du projet
+
+Installer PHP 7.1 ou supérieur
+
+- sur debian utiliser ces instruction:
+
+> apt install apt-transport-https lsb-release ca-certificates
+>
+> wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+>
+> echo "deb https://packages.sury.org/php/ \$(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
+>
+> apt update
+>
+> apt install php7.2
+
+- sur ubuntu utiliser ces instruction:
+
+> apt-get install software-properties-common
+>
+> add-apt-repository ppa:ondrej/php
+>
+> apt update
+>
+> apt install php7.2
 
 Installer composer : https://getcomposer.org/
 Clonner le repo git sur votre PC
