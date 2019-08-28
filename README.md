@@ -52,13 +52,13 @@ Installer PHP 7.1 ou supérieur
 >
 > apt install php7.2
 
-Installer composer : https://getcomposer.org/
-Clonner le repo git sur votre PC
-Lancer la commande `composer install`
-Se créer un compte sur le site `https://darksky.net`, obtenir une clef d'API gratuite qui permet de réaliser jusqu'à 1000 appels par jour.
-Renseigner la clef dans la variabl d'environnement `DARK_SKY_API_KEY` (suivre les instructions fournies dans le fichier `.env`)
-Lancer la commande `php bin/console server:run` pour lancer un serveur web qui écoute sur l'adresse `http://127.0.0.1:8000`
-La page qui affichera la météo est disponnible à l'url `http://127.0.0.1:8000/weather`
+Installer composer globalement (sinon la commande `composer install` devra être remplacé par `php composer.phar install`): https://getcomposer.org/  
+Clonner le repo git sur votre PC  
+Lancer la commande `composer install`  
+Se créer un compte sur le site `https://darksky.net`, obtenir une clef d'API gratuite qui permet de réaliser jusqu'à 1000 appels par jour.  
+Renseigner la clef dans la variabl d'environnement `DARK_SKY_API_KEY` (suivre les instructions fournies dans le fichier `.env`)  
+Lancer la commande `php bin/console server:run` pour lancer un serveur web qui écoute sur l'adresse `http://127.0.0.1:8000`  
+La page qui affichera la météo est disponnible à l'url `http://127.0.0.1:8000/weather`  
 
 ### Points à faire
 
