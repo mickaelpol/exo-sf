@@ -2,7 +2,7 @@
 
 ### Objectifs
 
-Le but de cet exercice est de récupérer les données météo via l'API https://darksky.net et de l'afficher dans une page web.
+Le but de cet exercice est de récupérer les données météo via l'API https://openweathermap.org et de l'afficher dans une page web.
 
 L'objectif principal de cet exercice est d'évaluer votre capacité à utiliser le PHP, JS, HTML, CSS. N'hésiter pas à ajouter des fonctionnalitées sur la page qui affiche la météo, où a créer d'autre pages.
 
@@ -22,7 +22,7 @@ L'ensemble du projet a été initialisé afin de vous faire gagner du temps.
 
 La technologie utilisée est `symfony 4.3.2`
 
-L'api utilisé pour récupérer la météo est `Dark Sky API`
+L'api utilisé pour récupérer la météo est `Open Weather`
 
 La fonction `dump` de symfony permet d'affciher des données lorsqu'on est en mode debug.
 
@@ -52,13 +52,13 @@ Installer PHP 7.1 ou supérieur
 >
 > apt install php7.2
 
-Installer composer globalement (sinon la commande `composer install` devra être remplacé par `php composer.phar install`): https://getcomposer.org/  
-Clonner le repo git sur votre PC  
-Lancer la commande `composer install`  
-Se créer un compte sur le site `https://darksky.net`, obtenir une clef d'API gratuite qui permet de réaliser jusqu'à 1000 appels par jour.  
-Renseigner la clef dans la variabl d'environnement `DARK_SKY_API_KEY` (suivre les instructions fournies dans le fichier `.env`)  
-Lancer la commande `php bin/console server:run` pour lancer un serveur web qui écoute sur l'adresse `http://127.0.0.1:8000`  
-La page qui affichera la météo est disponnible à l'url `http://127.0.0.1:8000/weather`  
+Installer composer globalement (sinon la commande `composer install` devra être remplacé par `php composer.phar install`): https://getcomposer.org/
+Clonner le repo git sur votre PC
+Lancer la commande `composer install`
+Se créer un compte sur le site `https://openweathermap.org/`, obtenir une clef d'API gratuite.
+Renseigner la clef dans la variabl d'environnement `WHEATHER_API_KEY` (suivre les instructions fournies dans le fichier `.env`)
+Lancer la commande `php bin/console server:run` pour lancer un serveur web qui écoute sur l'adresse `http://127.0.0.1:8000`
+La page qui affichera la météo est disponnible à l'url `http://127.0.0.1:8000/weather`
 
 ### Points à faire
 

@@ -20,7 +20,7 @@ class WeatherService
      */
     public function getWeather()
     {
-        $response = $this->client->request('GET', 'https://api.darksky.net/forecast/' . $this->apiKey . '/37.8267,-122.4233');
+        $response = $this->client->request('GET', 'https://api.openweathermap.org/data/2.5/weather?lon=1.44&lat=43.6&appid=' . $this->apiKey);
 
         return [
             'temperature' => '20', // en °C
