@@ -8,7 +8,7 @@ use App\Service\WeatherService;
 
 class WeatherController extends AbstractController
 {
-    private $wheatherService;
+    private $weatherService;
 
     public function __construct(WeatherService $weather)
     {
