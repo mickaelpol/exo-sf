@@ -1,0 +1,271 @@
+@import '~bootstrap';
+@import '~font-awesome';
+
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: url('../../public/background_image/ensoleille.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("../../public/font/LibreBaskerville-Bold.ttf") format("truetype"),
+    url("../../public/font/LibreBaskerville-Italic.ttf") format("truetype"),
+    url("../../public/font/LibreBaskerville-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../../public/font/SourceSansPro-Regular.ttf") format("truetype"),
+    url("../../public/font/SourceSansPro-Bold.ttf") format("truetype"),
+    url("../../public/font/SourceSansPro-Italic.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Libre Baskerville";
+}
+
+/* Barre de recherche */
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.3s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    caret-color:red;
+    transition: width 0.3s linear;
+}
+
+.search_input:focus {
+    padding: 0 10px;
+    width: 200px;
+    caret-color:red;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+}
+
+/* AFFICHAGE CADRE METEO */
+.weather-app {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5) !important;
+    background: rgba(200,200,200,0.7);
+}
+
+.popover {
+    background-color: rgba(0,0,0,0.85);
+}
+
+.popover-body {
+    color: rgb(250,250,250);
+}
+
+.bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+    border-bottom-color: rgba(0,0,0,0.85);
+}
+
+.temperature {
+    padding-top: 27%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-thermometer, .fa-tint, .uv, .fa-flag {
+    font-weight: bold !important;
+}
+
+.light-grey {
+    color: rgb(80,80,80);
+}
+
+small.wind-force {
+    font-size: 75%;
+    margin-left: 5px;
+}
+
+/* CADRE PREVISION JOURNALIERE */
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+/*.img-prevision {*/
+/*    width: 25px;*/
+/*    min-height: auto;*/
+/*}*/
+
+.separation {
+    color: rgb(80,80,80);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.temperature-prevision {
+    color: rgb(80,80,80);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pipe {
+    font-weight: bold;
+    color: rgb(80,80,80);
+}
+
+.icon .fa-tint {
+    color: rgb(80,80,80);
+}
+
+small.percent {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.day {
+    color: rgb(80,80,80);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ressent, .humidity, .uv-precision, .wind, .wind-force {
+    font-weight: bold !important;
+}
+
+
+/* MEDIA QUERRY */
+@media (min-width: 320px) {
+    .fa-map-marker {
+        font-size: 0.9rem;
+    }
+
+    .temperature {
+        padding-top: 33%;
+    }
+}
+
+@media (min-width: 375px) {
+    .fa-map-marker {
+        font-size: 0.9rem;
+    }
+
+    .temperature {
+        padding-top: 25%;
+    }
+}
+
+@media (min-width: 425px) {
+    .fa-map-marker {
+        font-size: 0.9rem;
+    }
+
+    .temperature {
+        padding-top: 20%;
+    }
+
+    .uv-precision, .wind-precision {
+        font-size: 86%;
+    }
+}
+
+@media (min-width: 768px) {
+    .fa-map-marker {
+        font-size: 0.90rem;
+    }
+
+    .img {
+        min-width: 100px;
+        min-height: auto;
+    }
+
+    .temperature {
+        padding-top: 34%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fa-map-marker {
+        font-size: 0.90rem;
+    }
+
+    .ressent, .humidity, .uv, .wind {
+        font-size: 18px;
+    }
+
+    .img {
+        min-width: 100px;
+        min-height: auto;
+    }
+
+    .temperature {
+        padding-top: 22%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .fa-map-marker {
+        font-size: 0.90rem;
+    }
+
+    .img {
+        min-width: 100px;
+        min-height: auto;
+    }
+
+    .temperature {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .fa-map-marker {
+        font-size: 0.90rem;
+    }
+
+    .img {
+        min-width: 100px;
+        min-height: auto;
+    }
+
+    .temperature {
+        padding-top: 20%;
+    }
+}

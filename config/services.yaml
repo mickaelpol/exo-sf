@@ -26,4 +26,4 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
     App\Service\WeatherService:
-        arguments: ['%env(WEATHER_API_KEY)%']
+        arguments: ['%env(WEATHER_API_KEY)%', '%env(OPEN_WEATHER_MAP_UNITS)%', '%env(OPEN_WEATHER_MAP_MODE)%', '%env(OPEN_WEATHER_MAP_LANG)%']

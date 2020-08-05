@@ -1,12 +1,122 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    Hello WeatherController!
+    Météo
 {% endblock %}
 
 {% block body %}
 
-    <h1>Bienvenue sur la page Météo</h1>
+    <div class="container h-100">
+        <!-- BARRE DE RECHERCHE DE VILLE -->
+        <div class="row mt-5">
+            <div class="col">
+                <div class="d-flex justify-content-center h-100">
+                    {{ form_start(form, {"attr": {"id": "city_search"}}) }}
+                    <div class="searchbar">
+                        {{ form_widget(form.search) }}
+                        <button class="search_icon btn"><i class="fa fa-search"></i></button>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+
+        {% if meteo is empty %}
+            <!-- ROW AFFICHAGE MESSAGE D'ERREUR -->
+            <div class="row mt-5">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+                    <div class="weather-app p-5 light-grey">
+                        <div class="row">
+                            <div class="col-8 offset-2 col-sm-8">
+                                {% for message in app.flashes('error') %}
+                                    <div class="alert alert-danger">
+                                        <span class="font-weight-bold"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> {{ message }}</span>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+                <!-- ROW AFFICHAGE METEO -->
+                <div class="row mt-5">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+                        <div class="weather-app p-5 light-grey">
+                            <div class="row">
+                                <div class="col-8 offset-2 col-sm-8">
+                                    <div class="font-weight-bold ville text-center"><i class="fa fa-map-marker fa-fw"></i>{{ meteo.nom }}</div>
+                                    <div class="font-weight-bold date text-center">{{ meteo.date }}</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-4 offset-2 col-sm-2 offset-sm-0 col-md-3 offset-md-3 d-flex justify-content-center">
+                                    <img class="img" src="http://openweathermap.org/img/wn/{{ meteo.icone }}@2x.png" alt="">
+                                </div>
+                                <div class="col-4 col-sm-2 text-center">
+                                    <div class="font-weight-bold temperature">{{ meteo.temperature }}°</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <span class="weather-description">{{ meteo.description }}</span>
+                                </div>
+                            </div>
+                            <div class="row mt-5 light-grey">
+                                <div class="col-3 text-center">
+                                    <div class="ressent pop" data-toggle="hover" data-content="ressenti" data-placement="bottom">
+                                        <span><i class="fa fa-thermometer fa-fw"></i>{{ meteo.ressenti }}°</span>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div class="humidity pop" data-toggle="hover" data-content="humidité" data-placement="bottom">
+                                        <span><i class="fa fa-tint fa-fw"></i>{{ meteo.humidite }}%</span>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div class="pop" data-toggle="hover" data-content="indice UV" data-placement="bottom">
+                                        <span><span class="uv">UV</span> <small class="uv-precision"> {{ meteo.uv }}/11</small></span>
+                                    </div>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <div class="wind pop" data-toggle="hover" data-content="vent et direction" data-placement="bottom">
+                                        <span><i class="fa fa-flag fa-fw"></i><span class="wind-precision"> {{ meteo.vent }}Km/h</span></span>
+                                        <small class="wind-force">{{ meteo.direction_vent }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AFFICHAGE PREVISION -->
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+                        <div class="weather-app">
+                            <div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1">
+                                <div class="row">
+                                    {% for prevision in meteo.previsions %}
+                                        <div class="col mt-3 mb-3">
+                                            <h6 class="text-center day">{{ prevision.date }}.</h6>
+                                            <div class="d-flex justify-content-center">
+                                                <img src="http://openweathermap.org/img/wn/{{ prevision.icone }}.png" alt="">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="text-center mt-1 icon"><i class="fa fa-tint"> <small class="percent">{{ prevision.humidite }}%</small></i></div>
+                                            <div class="temp-prevision text-center mt-2">
+                                                <div class="temperature-prevision">{{ prevision.minimale }}°</div>
+                                                <div class="pipe">|</div>
+                                                <div class="temperature-prevision">{{ prevision.maximale }}°</div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        {% endif %}
+    </div>
 
 
 {% endblock %}
