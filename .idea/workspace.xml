@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f32b4c2-8ee3-4bd6-b665-e8fd26d4ae44" name="Default Changelist" comment="Paramét" />
+    <list default="true" id="9f32b4c2-8ee3-4bd6-b665-e8fd26d4ae44" name="Default Changelist" comment="Paramét">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,12 +145,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
@@ -165,7 +173,7 @@
       <updated>1596290740819</updated>
       <workItem from="1596290742420" duration="110634000" />
       <workItem from="1596580193904" duration="27695000" />
-      <workItem from="1596640108644" duration="631000" />
+      <workItem from="1596640108644" duration="1638000" />
     </task>
     <servers />
   </component>
@@ -173,6 +181,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="710" y="303" width="590" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596641568243">
+      <screen x="70" y="27" width="1850" height="948" />
+    </state>
+    <state x="710" y="303" width="590" height="403" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.948@70.27.1850.948" timestamp="1596641568243" />
+    <state x="728" y="250" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596641555636">
+      <screen x="70" y="27" width="1850" height="948" />
+    </state>
+    <state x="728" y="250" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.948@70.27.1850.948" timestamp="1596641555636" />
     <state x="728" y="259" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596588645890">
       <screen x="70" y="27" width="1850" height="948" />
     </state>
