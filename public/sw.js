@@ -3,7 +3,9 @@ const absoluteUrl = self.location.href;
 const cacheName = 'data-city';
 
 const cacheAssets = [
-    `/data-city`,
+    '/data-city',
+    `${absoluteUrl}/build/images/ensoleille.6d81e345.jpg`
+
 ]
 
 /* Appel de l'event "Install" */
@@ -11,7 +13,7 @@ self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheName)
             .then(cache => cache.addAll(cacheAssets))
-            .catch(error => console.error('💩', error))
+            .catch(error => console.error('Error: ', error))
     )
 })
 
