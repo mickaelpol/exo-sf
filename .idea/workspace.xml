@@ -2,48 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f32b4c2-8ee3-4bd6-b665-e8fd26d4ae44" name="Default Changelist" comment="Paramét">
-      <change afterPath="$PROJECT_DIR$/.idea/exo-sf.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/assets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/background_image/ensoleille.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data/city.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/LibreBaskerville-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/LibreBaskerville-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/LibreBaskerville-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/SourceSansPro-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/SourceSansPro-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/SourceSansPro-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/SearchCityType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SearchRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WeatherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/WeatherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/WeatherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weather/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weather/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +167,7 @@
       <updated>1596290740819</updated>
       <workItem from="1596290742420" duration="110634000" />
       <workItem from="1596580193904" duration="27695000" />
+      <workItem from="1596640108644" duration="272000" />
     </task>
     <servers />
   </component>
