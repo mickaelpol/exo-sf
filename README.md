@@ -14,7 +14,9 @@
 
 > yarn build (Pour compiler les fichiers et les minifier)
 
-> Ne pas oublier de faire un CHMOD 777 -R /public ( sinon l'accès au service worker ne fonctionnera pas )
+> Ne pas oublier de faire un CHMOD 777 -R public/ ( sinon l'accès au service worker ne fonctionnera pas )
+
+> Ajouter vorte clé API dans le .env
 
 > php bin/console server:start
 
